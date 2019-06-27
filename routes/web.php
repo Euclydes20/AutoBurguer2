@@ -18,3 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/MontarLanche', function() {
+    return view('MontarLanche');
+});
+
+Route::get('/style', function() {
+    return view('style');
+});
+
+Route::get('/team', function() {
+    return view('team');
+});

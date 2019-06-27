@@ -71,7 +71,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('teste') }}">Login</a>
+                        <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
@@ -88,10 +88,10 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a> -->
-                    <a href="https://laravel.com/docs">Montar Lanche</a>
+                    <a href="{{ url('/MontarLanche') }}">Montar Lanche</a>
                     <a href="https://laracasts.com">Lanches Prontos</a>
                     <a href="https://laravel-news.com">Serviços</a>
-                    <a href="https://forge.laravel.com">Sobre Nós</a>
+                    <a href="{{ url('/team') }}">Sobre Nós</a>
                 </div>
             </div>
         </div>
